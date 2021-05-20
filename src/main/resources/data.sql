@@ -1,3 +1,10 @@
+SET FOREIGN_KEY_CHECKS=0;
+truncate table heroku_99c76e843a759c6.client;
+truncate table heroku_99c76e843a759c6.product;
+truncate table heroku_99c76e843a759c6.wishlist;
+truncate table heroku_99c76e843a759c6.wishlist_product;
+SET FOREIGN_KEY_CHECKS=1;
+
 INSERT INTO client (name, cpf, birthday, number, email, password) VALUES ('Caroline Ribeiro', '12883424462', '17/07/1999','94449195', 'carol@gmail.com', 'senha123');
 INSERT INTO client (name, cpf, birthday, number, email, password) VALUES ('Alice Pizetta', '14785236987', '25/05/2000','91952328', 'alice@gmail.com', 'senha123');
 INSERT INTO client (name, cpf, birthday, number, email, password) VALUES ('Jacqueline Sales', '21458963774', '01/08/1990','93072327', 'jack@gmail.com', 'senha123');
