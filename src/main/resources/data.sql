@@ -19,25 +19,37 @@ INSERT INTO product (name, price, description) VALUES ('Panela Inox', '130.00', 
 INSERT INTO product (name, price, description) VALUES ('Churrasqueira', '300.00', 'Portátil e fácil de manusear.');
 INSERT INTO product (name, price, description) VALUES ('Sanduicheira', '50.00', 'Prepara o seu café da manhã com mais facilidade.');
 
-INSERT INTO wishlist (id_client) VALUES (1);
-INSERT INTO wishlist (id_client) VALUES (2);
-INSERT INTO wishlist (id_client) VALUES (3);
-INSERT INTO wishlist (id_client) VALUES (4);
-INSERT INTO wishlist (id_client) VALUES (5);
-INSERT INTO wishlist (id_client) VALUES (6);
+INSERT INTO wishlist (id_client) VALUES ((select id from client where cpf = '12883424462' limit 1));
+INSERT INTO wishlist (id_client) VALUES ((select id from client where cpf = '14785236987' limit 1));
+INSERT INTO wishlist (id_client) VALUES ((select id from client where cpf = '21458963774' limit 1));
+INSERT INTO wishlist (id_client) VALUES ((select id from client where cpf = '74185296354' limit 1));
+INSERT INTO wishlist (id_client) VALUES ((select id from client where cpf = '54800956099' limit 1));
+INSERT INTO wishlist (id_client) VALUES ((select id from client where cpf = '80442716001' limit 1));
 
-INSERT INTO wishlist_product (wishlist_id, product_id) VALUES (1, 2);
-INSERT INTO wishlist_product (wishlist_id, product_id) VALUES (1, 5);
-INSERT INTO wishlist_product (wishlist_id, product_id) VALUES (2, 1);
-INSERT INTO wishlist_product (wishlist_id, product_id) VALUES (2, 4);
-INSERT INTO wishlist_product (wishlist_id, product_id) VALUES (3, 5);
-INSERT INTO wishlist_product (wishlist_id, product_id) VALUES (3, 3);
-INSERT INTO wishlist_product (wishlist_id, product_id) VALUES (4, 5);
-INSERT INTO wishlist_product (wishlist_id, product_id) VALUES (4, 6);
-INSERT INTO wishlist_product (wishlist_id, product_id) VALUES (5, 1);
-INSERT INTO wishlist_product (wishlist_id, product_id) VALUES (5, 2);
-INSERT INTO wishlist_product (wishlist_id, product_id) VALUES (6, 2);
-INSERT INTO wishlist_product (wishlist_id, product_id) VALUES (6, 6);
+INSERT INTO wishlist_product (wishlist_id, product_id) VALUES ((select w.id from client c inner join wishlist w on c.id = w.id_client where cpf = '12883424462' limit 1),
+                                                              (select id from product where name = 'Sofá' limit 1));
+INSERT INTO wishlist_product (wishlist_id, product_id) VALUES ((select w.id from client c inner join wishlist w on c.id = w.id_client where cpf = '12883424462' limit 1),
+                                                              (select id from product where name = 'Iphone XR' limit 1));
+INSERT INTO wishlist_product (wishlist_id, product_id) VALUES ((select w.id from client c inner join wishlist w on c.id = w.id_client where cpf = '14785236987' limit 1),
+                                                              (select id from product where name = 'Armário' limit 1));
+INSERT INTO wishlist_product (wishlist_id, product_id) VALUES ((select w.id from client c inner join wishlist w on c.id = w.id_client where cpf = '14785236987' limit 1),
+                                                              (select id from product where name = 'Sofá' limit 1));
+INSERT INTO wishlist_product (wishlist_id, product_id) VALUES ((select w.id from client c inner join wishlist w on c.id = w.id_client where cpf = '21458963774' limit 1),
+                                                              (select id from product where name = 'Armário' limit 1));
+INSERT INTO wishlist_product (wishlist_id, product_id) VALUES ((select w.id from client c inner join wishlist w on c.id = w.id_client where cpf = '21458963774' limit 1),
+                                                              (select id from product where name = 'Sofá' limit 1));
+INSERT INTO wishlist_product (wishlist_id, product_id) VALUES ((select w.id from client c inner join wishlist w on c.id = w.id_client where cpf = '74185296354' limit 1),
+                                                              (select id from product where name = 'Armário' limit 1));
+INSERT INTO wishlist_product (wishlist_id, product_id) VALUES ((select w.id from client c inner join wishlist w on c.id = w.id_client where cpf = '74185296354' limit 1),
+                                                              (select id from product where name = 'Sofá' limit 1));
+INSERT INTO wishlist_product (wishlist_id, product_id) VALUES ((select w.id from client c inner join wishlist w on c.id = w.id_client where cpf = '54800956099' limit 1),
+                                                              (select id from product where name = 'Armário' limit 1));
+INSERT INTO wishlist_product (wishlist_id, product_id) VALUES ((select w.id from client c inner join wishlist w on c.id = w.id_client where cpf = '54800956099' limit 1),
+                                                              (select id from product where name = 'Sofá' limit 1));
+INSERT INTO wishlist_product (wishlist_id, product_id) VALUES ((select w.id from client c inner join wishlist w on c.id = w.id_client where cpf = '80442716001' limit 1),
+                                                              (select id from product where name = 'Armário' limit 1));
+INSERT INTO wishlist_product (wishlist_id, product_id) VALUES ((select w.id from client c inner join wishlist w on c.id = w.id_client where cpf = '80442716001' limit 1),
+                                                              (select id from product where name = 'Sofá' limit 1));I
 
 
 
