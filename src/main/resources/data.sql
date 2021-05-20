@@ -49,7 +49,7 @@ INSERT INTO wishlist_product (wishlist_id, product_id) VALUES ((select w.id from
 INSERT INTO wishlist_product (wishlist_id, product_id) VALUES ((select w.id from client c inner join wishlist w on c.id = w.id_client where cpf = '80442716001' limit 1),
                                                               (select id from product where name = 'Armário' limit 1));
 INSERT INTO wishlist_product (wishlist_id, product_id) VALUES ((select w.id from client c inner join wishlist w on c.id = w.id_client where cpf = '80442716001' limit 1),
-                                                              (select id from product where name = 'Sofá' limit 1));I
+                                                              (select id from product where name = 'Sofá' limit 1));
 
 
 
