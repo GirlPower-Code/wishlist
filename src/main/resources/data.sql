@@ -19,15 +19,18 @@ INSERT INTO wishlist (id_client) VALUES (4);
 INSERT INTO wishlist (id_client) VALUES (5);
 INSERT INTO wishlist (id_client) VALUES (6);
 
-INSERT INTO wishlist_product (wish_list_id, product_id) VALUES (1, 2);
-INSERT INTO wishlist_product (wish_list_id, product_id) VALUES (1, 5);
-INSERT INTO wishlist_product (wish_list_id, product_id) VALUES (2, 1);
-INSERT INTO wishlist_product (wish_list_id, product_id) VALUES (2, 4);
-INSERT INTO wishlist_product (wish_list_id, product_id) VALUES (3, 5);
-INSERT INTO wishlist_product (wish_list_id, product_id) VALUES (3, 3);
-INSERT INTO wishlist_product (wish_list_id, product_id) VALUES (4, 5);
-INSERT INTO wishlist_product (wish_list_id, product_id) VALUES (4, 6);
-INSERT INTO wishlist_product (wish_list_id, product_id) VALUES (5, 1);
-INSERT INTO wishlist_product (wish_list_id, product_id) VALUES (5, 2);
-INSERT INTO wishlist_product (wish_list_id, product_id) VALUES (6, 2);
-INSERT INTO wishlist_product (wish_list_id, product_id) VALUES (6, 6);
+INSERT INTO wishlist_product (wishlist_id, product_id) VALUES (1, 2);
+INSERT INTO wishlist_product (wishlist_id, product_id) VALUES (1, 5);
+INSERT INTO wishlist_product (wishlist_id, product_id) VALUES (2, 1);
+INSERT INTO wishlist_product (wishlist_id, product_id) VALUES (2, 4);
+INSERT INTO wishlist_product (wishlist_id, product_id) VALUES (3, 5);
+INSERT INTO wishlist_product (wishlist_id, product_id) VALUES (3, 3);
+INSERT INTO wishlist_product (wishlist_id, product_id) VALUES (4, 5);
+INSERT INTO wishlist_product (wishlist_id, product_id) VALUES (4, 6);
+INSERT INTO wishlist_product (wishlist_id, product_id) VALUES (5, 1);
+INSERT INTO wishlist_product (wishlist_id, product_id) VALUES (5, 2);
+INSERT INTO wishlist_product (wishlist_id, product_id) VALUES (6, 2);
+INSERT INTO wishlist_product (wishlist_id, product_id) VALUES (6, 6);
+
+
+
